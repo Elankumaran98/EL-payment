@@ -9,6 +9,15 @@ const CARD_OPTIONS = {
             iconColor:"#c4f0ff",
             color:"#fff",
             fontWeight:"500",
+            fontFamily:"Helvetica",
+            fontSize:"16px",
+            fontSmoothing:"antialiased",
+            ":webkit-autofill":{color:"#fco8883"},
+            ":placeholder":{color:"#87bbfd"}
+        },
+        invalid:{
+          iconColor:"#ffc7ee",
+          color:"#ffc7ee"
         }
     }
 }
