@@ -46,7 +46,7 @@ function PaymentForm() {
           setSucess(true);
         }
       } catch (error) {
-        console.log("Error: " + error);
+        console.log("Error: " , error);
       }
     } else {
       console.log(error.message);
@@ -59,14 +59,14 @@ function PaymentForm() {
         <form onSubmit={handleSubmit}>
           <fieldset className="FormGroup">
             <div className="FormRow">
-              <CardElement options={CARD_OPTIONS} />
+              <CardElement hidePostalCode={true} options={CARD_OPTIONS} />
             </div>
           </fieldset>
           <button>Pay</button>
         </form>
       ) : (
         <div>
-          <h2>Hello</h2>
+          <h2>Thank You</h2>
         </div>
       )}
     </>
